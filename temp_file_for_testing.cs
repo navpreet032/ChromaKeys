@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ChromaKeys
 {
-    internal class animation
+    internal class temp_file_for_testing
     {
     }
 }
