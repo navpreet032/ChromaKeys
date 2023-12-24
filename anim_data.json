@@ -1,0 +1,452 @@
+{
+  "pattern1": [
+    {
+      "input": 65281,
+      "identifier": 28,
+      "Speed": 500
+    },
+    {
+      "input": 16492674416648,
+      "identifier": 29,
+      "Speed": 500
+    },
+    {
+      "input": 16711682,
+      "identifier": 28,
+      "Speed": 500
+    },
+    {
+      "input": 15393162788872,
+      "identifier": 29,
+      "Speed": 500
+    },
+    {
+      "input": 4278190084,
+      "identifier": 28,
+      "Speed": 500
+    },
+    {
+      "input": 13194139533320,
+      "identifier": 29,
+      "Speed": 500
+    },
+    {
+      "input": 65284,
+      "identifier": 28,
+      "Speed": 500
+    },
+    {
+      "input": 7696581394440,
+      "identifier": 29,
+      "Speed": 500
+    },
+    {
+      "input": 65282,
+      "identifier": 28,
+      "Speed": 500
+    },
+    {
+      "input": 12094627905544,
+      "identifier": 29,
+      "Speed": 500
+    },
+    {
+      "input": 65281,
+      "identifier": 28,
+      "Speed": 500
+    },
+    {
+      "input": 14293651161096,
+      "identifier": 29,
+      "Speed": 500
+    },
+    {
+      "input": 65282,
+      "identifier": 28,
+      "Speed": 500
+    },
+    {
+      "input": 15393162788872,
+      "identifier": 29,
+      "Speed": 500
+    },
+    {
+      "input": 845479684,
+      "identifier": 28,
+      "Speed": 1000
+    },
+    {
+      "input": 8,
+      "identifier": 29,
+      "Speed": 1000
+    },
+    {
+      "input": 4284756481,
+      "identifier": 28,
+      "Speed": 500
+    },
+    {
+      "input": 3298534883336,
+      "identifier": 29,
+      "Speed": 500
+    },
+    {
+      "input": 4294967042,
+      "identifier": 28,
+      "Speed": 500
+    },
+    {
+      "input": 7696581394440,
+      "identifier": 29,
+      "Speed": 500
+    },
+    {
+      "input": 4294967044,
+      "identifier": 28,
+      "Speed": 500
+    },
+    {
+      "input": 16492674416648,
+      "identifier": 29,
+      "Speed": 500
+    }
+  ],
+  "pattern2": [
+    {
+      "input": 4278255361,
+      "identifier": 28,
+      "Speed": 0
+    },
+    {
+      "input": 8,
+      "identifier": 29,
+      "Speed": 0
+    },
+    {
+      "input": 4278255361,
+      "identifier": 28,
+      "Speed": 200
+    },
+    {
+      "input": 1099511627784,
+      "identifier": 29,
+      "Speed": 200
+    },
+    {
+      "input": 4278255361,
+      "identifier": 28,
+      "Speed": 200
+    },
+    {
+      "input": 8,
+      "identifier": 29,
+      "Speed": 200
+    },
+    {
+      "input": 4278255361,
+      "identifier": 28,
+      "Speed": 200
+    },
+    {
+      "input": 1099511627784,
+      "identifier": 29,
+      "Speed": 200
+    },
+    {
+      "input": 65282,
+      "identifier": 28,
+      "Speed": 200
+    },
+    {
+      "input": 3298534883336,
+      "identifier": 29,
+      "Speed": 200
+    },
+    {
+      "input": 65282,
+      "identifier": 28,
+      "Speed": 100
+    },
+    {
+      "input": 1099511627784,
+      "identifier": 29,
+      "Speed": 100
+    },
+    {
+      "input": 65282,
+      "identifier": 28,
+      "Speed": 200
+    },
+    {
+      "input": 3298534883336,
+      "identifier": 29,
+      "Speed": 200
+    },
+    {
+      "input": 7696581394440,
+      "identifier": 29,
+      "Speed": 200
+    },
+    {
+      "input": 65284,
+      "identifier": 28,
+      "Speed": 200
+    },
+    {
+      "input": 4278255364,
+      "identifier": 28,
+      "Speed": 150
+    },
+    {
+      "input": 3298534883336,
+      "identifier": 29,
+      "Speed": 150
+    },
+    {
+      "input": 7696581394440,
+      "identifier": 29,
+      "Speed": 100
+    },
+    {
+      "input": 4278255364,
+      "identifier": 28,
+      "Speed": 100
+    },
+    {
+      "input": 65288,
+      "identifier": 28,
+      "Speed": 150
+    },
+    {
+      "input": 16492674416648,
+      "identifier": 29,
+      "Speed": 150
+    },
+    {
+      "input": 65288,
+      "identifier": 28,
+      "Speed": 100
+    },
+    {
+      "input": 7696581394440,
+      "identifier": 29,
+      "Speed": 100
+    },
+    {
+      "input": 65288,
+      "identifier": 28,
+      "Speed": 150
+    },
+    {
+      "input": 16492674416648,
+      "identifier": 29,
+      "Speed": 150
+    },
+    {
+      "input": 65288,
+      "identifier": 28,
+      "Speed": 150
+    },
+    {
+      "input": 7696581394440,
+      "identifier": 29,
+      "Speed": 150
+    },
+    {
+      "input": 65288,
+      "identifier": 28,
+      "Speed": 50
+    },
+    {
+      "input": 16492674416648,
+      "identifier": 29,
+      "Speed": 50
+    }
+  ],
+  "API_test1": [
+    {
+      "input": 65281,
+      "identifier": 28,
+      "Speed": 500
+    },
+    {
+      "input": 16492674416648,
+      "identifier": 29,
+      "Speed": 500
+    },
+    {
+      "input": 16711682,
+      "identifier": 28,
+      "Speed": 100
+    },
+    {
+      "input": 15393162788872,
+      "identifier": 29,
+      "Speed": 100
+    }
+  ],
+  "COMP_SUCCESSFULL": [
+    {
+      "input": 16711681,
+      "identifier": 28,
+      "Speed": 50
+    },
+    {
+      "input": 16492674416648,
+      "identifier": 29,
+      "Speed": 50
+    },
+    {
+      "input": 16711682,
+      "identifier": 28,
+      "Speed": 50
+    },
+    {
+      "input": 16492674416648,
+      "identifier": 29,
+      "Speed": 50
+    },
+    {
+      "input": 16711684,
+      "identifier": 28,
+      "Speed": 50
+    },
+    {
+      "input": 16492674416648,
+      "identifier": 29,
+      "Speed": 50
+    },
+    {
+      "input": 16711688,
+      "identifier": 28,
+      "Speed": 50
+    },
+    {
+      "input": 16492674416648,
+      "identifier": 29,
+      "Speed": 50
+    },
+    {
+      "input": 16711688,
+      "identifier": 28,
+      "Speed": 150
+    },
+    {
+      "input": 8,
+      "identifier": 29,
+      "Speed": 150
+    },
+    {
+      "input": 16711688,
+      "identifier": 28,
+      "Speed": 150
+    },
+    {
+      "input": 16492674416648,
+      "identifier": 29,
+      "Speed": 150
+    },
+    {
+      "input": 16711688,
+      "identifier": 28,
+      "Speed": 150
+    },
+    {
+      "input": 8,
+      "identifier": 29,
+      "Speed": 150
+    },
+    {
+      "input": 16711688,
+      "identifier": 28,
+      "Speed": 150
+    },
+    {
+      "input": 16492674416648,
+      "identifier": 29,
+      "Speed": 150
+    }
+  ],
+  "COMP_FAILED": [
+    {
+      "input": 65281,
+      "identifier": 28,
+      "Speed": 50
+    },
+    {
+      "input": 16492674416648,
+      "identifier": 29,
+      "Speed": 50
+    },
+    {
+      "input": 65282,
+      "identifier": 28,
+      "Speed": 50
+    },
+    {
+      "input": 16492674416648,
+      "identifier": 29,
+      "Speed": 50
+    },
+    {
+      "input": 65284,
+      "identifier": 28,
+      "Speed": 50
+    },
+    {
+      "input": 16492674416648,
+      "identifier": 29,
+      "Speed": 50
+    },
+    {
+      "input": 65288,
+      "identifier": 28,
+      "Speed": 50
+    },
+    {
+      "input": 16492674416648,
+      "identifier": 29,
+      "Speed": 50
+    },
+    {
+      "input": 65288,
+      "identifier": 28,
+      "Speed": 150
+    },
+    {
+      "input": 8,
+      "identifier": 29,
+      "Speed": 150
+    },
+    {
+      "input": 65288,
+      "identifier": 28,
+      "Speed": 150
+    },
+    {
+      "input": 16492674416648,
+      "identifier": 29,
+      "Speed": 150
+    },
+    {
+      "input": 65288,
+      "identifier": 28,
+      "Speed": 150
+    },
+    {
+      "input": 8,
+      "identifier": 29,
+      "Speed": 150
+    },
+    {
+      "input": 65288,
+      "identifier": 28,
+      "Speed": 150
+    },
+    {
+      "input": 16492674416648,
+      "identifier": 29,
+      "Speed": 150
+    }
+  ]
+}

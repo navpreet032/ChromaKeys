@@ -10,7 +10,7 @@ namespace ChromaKeys
     {
         public static ulong encode_ZoneStates(bool zone1On, bool zone2On, bool zone3On, bool zone4On)
         {
-            ulong encodedState = 8UL; // Base value (assuming it's always needed)
+            ulong encodedState = 8UL; // Base value (turns all zones off)
 
             // Define the mask for each zone
             ulong zone1Mask = 1099511627776UL; // Zone 1

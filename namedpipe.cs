@@ -25,8 +25,7 @@ namespace ChromaKeys
                     cline_stream.WaitForPipeDrain();
                     byte[] array = new byte[9];
                     cline_stream.Read(array, 0, array.Length);
-                    Console.WriteLine(BitConverter.ToUInt32(array, 5));
-                    Console.WriteLine(BitConverter.ToString(array));
+                  
                     return BitConverter.ToUInt32(array, 5);
                 }).ConfigureAwait(false);
                 cline_stream.Close();
@@ -39,54 +38,53 @@ namespace ChromaKeys
             return 0;
         }
 
-        public static async Task<uint> ANIM_WMI_SetKbRGB(List<Utils.KeyValSpeed> input, bool run)
+        public static async Task ANIM_WMI_SetKbRGB(List<Utils.KeyValSpeed> input, bool run)
         {
-            uint num2;
             try
-
             {
-
-                NamedPipeClientStream cline_stream = new NamedPipeClientStream(".", "PredatorSense_service_namedpipe", PipeDirection.InOut);
-                cline_stream.Connect();
-                uint num = await Task.Run<uint>(delegate
+                using (NamedPipeClientStream cline_stream = new NamedPipeClientStream(".", "PredatorSense_service_namedpipe", PipeDirection.InOut))
                 {
-                    while(run)
+
+                    cline_stream.Connect();
+                    while (run)
                     {
                         foreach (var pair in input)
-
                         {
-                           
-                            if (pair.identifier == 28)
+                            try
                             {
-                                IPCMethods.SendCommandByNamedPipe(cline_stream, 28, new object[] { pair.input });
-                            }
-                            else
-                            {
-                                IPCMethods.SendCommandByNamedPipe(cline_stream, 29, new object[] { pair.input });
-                            }
+                                if (pair.identifier == 28)
+                                {
+                                    IPCMethods.SendCommandByNamedPipe(cline_stream, 28, new object[] { pair.input });
+                                }
+                                else
+                                {
+                                    IPCMethods.SendCommandByNamedPipe(cline_stream, 29, new object[] { pair.input });
+                                }
 
-                            cline_stream.WaitForPipeDrain();
-                            Thread.Sleep(pair.Speed);
+                                cline_stream.WaitForPipeDrain();
+                                Thread.Sleep(pair.Speed);
+                            }
+                            catch (Exception ex)
+                            {
+                                   
+                                // Log or handle the exception
+                                Console.WriteLine("Exception in loop: " + ex.Message);
+                                // Consider whether to break out of the loop or not
+                            }
                         }
+                       
                     }
-                    byte[] array = new byte[9];
-                    cline_stream.Read(array, 0, array.Length);
-                    Console.WriteLine(BitConverter.ToUInt32(array, 5));
-                    Console.WriteLine(BitConverter.ToString(array));
-                    return BitConverter.ToUInt32(array, 5);
-                }).ConfigureAwait(false);
-                cline_stream.Close();
-                num2 = num;
+                }
             }
-            catch (Exception)
-            {
-                num2 = uint.MaxValue;
-            }
-            return 0;
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Exception in ANIM_WMI_SetKbRGB: " + ex.Message);
+                }
+
         }
 
         
-        public static async Task<uint> Notification_WMI_SetKbRGB(List<Utils.KeyValSpeed> input)
+        public static async Task<uint> Notification_WMI_SetKbRGB(List<Utils.KeyValSpeed> input) 
         {
             uint num2;
             try
@@ -97,8 +95,7 @@ namespace ChromaKeys
                 cline_stream.Connect();
                 uint num = await Task.Run<uint>(delegate
                 {
-                    for (int i = 0; i <= 2; i++)
-                    {
+                   
                         foreach (var pair in input)
                         {
                             if (pair.identifier == 28)
@@ -114,20 +111,27 @@ namespace ChromaKeys
                             Thread.Sleep(pair.Speed);
                         }
                         Thread.Sleep(50);
-                    }
+                    
                     byte[] array = new byte[9];
                     cline_stream.Read(array, 0, array.Length);
-                    Console.WriteLine(BitConverter.ToUInt32(array, 5));
-                    Console.WriteLine(BitConverter.ToString(array));
+                   
                     return BitConverter.ToUInt32(array, 5);
                 }).ConfigureAwait(false);
                 cline_stream.Close();
                 num2 = num;
+                Utils.stateTable.AddLast("notif");
             }
             catch (Exception)
             {
-                num2 = uint.MaxValue;
+                num2 = uint.MaxValue; 
             }
+            
+            List<ulong> list = Utils.RGB_table.get_RGB();
+            
+            //GET DATA From JSON Based on NAME
+            //List<Utils.KeyValSpeed> prev_input = Utils.ReadPatternFromJsonFile(Utils.JSON_path.get_JsonPath(), Utils.pattern_table.get_patternName());
+            await Utils.Rollback(Utils.pattern_table.get_patternName(), list[0], list[1], list[2]);
+          
             return 0;
         }
 
@@ -150,8 +154,7 @@ namespace ChromaKeys
                     }
                     byte[] array = new byte[9];
                     cline_stream.Read(array, 0, array.Length);
-                    Console.WriteLine(BitConverter.ToUInt32(array, 5));
-                    Console.WriteLine(BitConverter.ToString(array));
+                    
                     return BitConverter.ToUInt32(array, 5);
                 }).ConfigureAwait(false);
                 cline_stream.Close();
