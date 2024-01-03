@@ -58,4 +58,4 @@ Example:
 ]
 ```
 
-* : feature in development
+ *: feature in development
