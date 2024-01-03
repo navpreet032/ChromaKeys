@@ -13,7 +13,7 @@ ChromaKeys is an API-first platform that empowers users to manipulate the RGB li
 Features
 
   - Static Light Control: Set a static color across your keyboard with simple API calls, perfect for creating a consistent aesthetic or reducing distractions.
-  - *Dynamic Pattern Creation: Craft and store unique lighting patterns that can be triggered by specific events or user interactions.
+  - Dynamic Pattern Creation: Craft and store unique lighting patterns that can be triggered by specific events or user interactions.
   - Event-Based Lighting: Integrate with software like IDEs to reflect system states—imagine your keyboard flashing green upon successful code compilation or turning red to indicate errors.
   - Multi-Client Handling: Designed with concurrency in mind, ChromaKeys can handle multiple requests from different clients, ensuring a responsive experience across the board.
 
@@ -57,5 +57,3 @@ Example:
 {"zone": 4, "r": 255, "g": 0, "b": 0, "states": [true, true, true, true], "speed": 150, "isStatic": true}
 ]
 ```
-
- *: feature in development
