@@ -59,8 +59,7 @@ namespace ChromaKeys
         [HttpPost("holy_fun")]  
         public ActionResult HolyFun([FromBody] List<string> funList)
         {
-            // Add logic for holy_fun
-            // ...
+            // Add logic for set rgb per zone
 
             return Ok($"Holy function called with {funList.Count} items.");
         }
